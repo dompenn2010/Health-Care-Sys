@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--
+    Two constructors, one that updates existing and populates all fields but password
+    one that creates new and all fields are editable
+
+-->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="512.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserSearchController">
+   <children>
+      <HBox prefHeight="30.0" prefWidth="512.0" style="-fx-background-color: #DCDCDC; -fx-border-style: solid ; -fx-border-width: .5px; -fx-border-color: #222;">
+         <children>
+            <HBox prefHeight="28.0" prefWidth="143.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="User Management Portal" textOrigin="CENTER">
+               <font>
+                  <Font name="Comic Sans MS" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <GridPane layoutX="72.0" layoutY="30.0" prefHeight="246.0" prefWidth="369.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="122.0" text="Select User to Edit" />
+            <ChoiceBox fx:id="userList" prefWidth="150.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="32.0" layoutY="267.0" prefHeight="42.0" prefWidth="250.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="search" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#search" prefHeight="40.0" prefWidth="110.0" text="Search" GridPane.columnIndex="1" />
+            <Button fx:id="cancel" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cancel" prefHeight="40.0" prefWidth="110.0" text="Cancel" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

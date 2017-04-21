@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="guiFX">
+    <output-path>$PROJECT_DIR$/out/artifacts/guiFX</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="Main" />
+        <option name="description" value="" />
+        <option name="htmlParamFile" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="paramFile" value="" />
+        <option name="title" value="MHCPMS" />
+        <option name="vendor" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="gui.jar">
+        <element id="module-output" name="gui" />
+        <element id="file-copy" path="$PROJECT_DIR$/../mhcpms-cpsc4900/dist/lib/MHC-PMS-debug.jar" />
+      </element>
+    </root>
+  </artifact>
+</component>
